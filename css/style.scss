@@ -1,0 +1,883 @@
+/*Start Main Classes*/
+$bg-color:#f6f6f8;
+$typo-color:#313336;
+$myriad-normal-font:'Myriad Pro Regular';
+$myriad-bold-font: 'MyriadPro-Bold';
+$roboto-normal-font:'RobotoSlab-Regular';
+$roboto-bold-font:'RobotoSlab-Bold';
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('../fonts/Myriad\ Pro\ Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('../fonts/MyriadPro-Bold.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoSlab-Regular';
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoSlab-Bold';
+  src: url('../fonts/RobotoSlab-Bold') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+body{background-color: $bg-color}
+/*End Main Classes*/
+/*Main general Layout*/ 
+/*Start Upper-Bar*/
+.upper-bar
+{
+  background-color: $bg-color;
+  padding: 10px 2px;
+  font-family: $myriad-normal-font;
+  color: #8d8e94;
+  margin-bottom: 30px;
+  @media(max-width:990px)
+   {
+     text-align: center
+   }
+ .language
+ {
+  @media(max-width:990px)
+   {
+     margin-bottom: 20px;
+   }
+  span
+  {
+   margin-right: 6px;
+   margin-left:6px;
+   @media(max-width:990px)
+   {
+     margin-right: 2px;
+     margin-left: 2px;
+   }
+  }
+ }
+ .location
+ {
+  margin-left: 30px;
+   @media(max-width:990px)
+   {
+     margin-bottom: 20px;
+   }
+  i
+  {
+   margin-right: 6px;
+    @media(max-width:990px)
+   {
+     margin-right: 2px;
+   }
+  }
+  span
+  {
+   margin-right: 6px;
+   font-weight: bold;
+  }
+ }
+ .telephone
+ {
+   @media(max-width:990px)
+   {
+     margin-bottom: 20px;
+   }
+  i 
+  {
+    margin-right: 7px;
+    @media(max-width:990px)
+   {
+     margin-right: 2px;
+   }
+  }
+  span 
+  {
+   margin-left: 6px;
+   margin-right: 6px;
+    @media(max-width:990px)
+   {
+     margin-right: 2px;
+     margin-left: 2px;
+   }
+  }
+ }
+ .personal-area
+ {
+  i 
+  {
+    margin-right: 7px;
+   @media(max-width:990px)
+   {
+     margin-right: 2px;
+   }
+  }
+ }
+}
+/*Start Upper-Bar*/
+/*Start Navbar*/
+nav
+{
+ margin-top: 15px;
+ height: auto;
+ line-height: 80px;
+ margin-bottom: 10px;
+ background-color: #FFF;
+ .navbar-brand
+ {
+  margin-right: 30px;
+ }
+ ul 
+ {
+  text-align: center;
+  li 
+  {
+   display: inline-block;
+   margin-right: 10px;
+   margin-left: 10px;
+   a 
+   {
+     color: rgba(49, 50, 53, 0.65);
+	 text-decoration: none;
+	 font-weight: bold
+   }
+  }
+ }
+ .cart-info
+ {
+  img 
+  {
+	display: inline-block;
+  }
+  span 
+  {
+	display: inline-block
+  }
+  h6 
+  {
+	margin-top: -23px;
+    margin-left: 35px;
+  }
+ }
+}
+/*End Navbar*/
+/*Breadcrumb*/
+.breadcrumb
+{
+ background-color:$bg-color;
+ padding: 0 5px;
+ margin-top: -8px;
+}
+/*End Breadcrumb*/
+/*Start Footer*/
+footer 
+{
+ margin-top: 40px;
+ padding: 30px 6px;
+ background-color: #FFF;
+ font-family: $myriad-normal-font;
+ h5 
+ {
+  margin-bottom: 25px;
+  font-weight: bold;
+
+ }
+ ul 
+ {
+  li 
+  {margin-bottom: 10px}
+ }
+}
+/*End Footer*/
+/*Copyright*/
+.copy
+{
+ background: #f6f6f8;
+ padding: 20px 0 0;
+ p 
+ {
+  font-family: $myriad-normal-font;
+ }
+}
+/*End Main general Layout*/
+/***Start Home Page***/
+/*Start our-products Section*/
+.our-products
+{
+  background-image: url("../images/home-bg.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  padding: 100px 0;
+  text-align: left;
+  color: #FFF;
+ .single-item
+ {
+  width: 50%;
+  h3 
+  {
+   font-size: 37px;
+   font-family: $roboto-bold-font;
+   font-weight: bold;
+   letter-spacing: 1px;
+   margin-bottom: 30px;
+  }
+  p 
+  {
+   font-family: $myriad-normal-font;
+   line-height: 1.9;
+   margin-bottom: 40px;
+   font-size: 20px;
+  }
+  .main-button 
+  {
+	background-color: transparent;
+	border: 2px solid #505050;
+	color: #FFF;
+	padding: 8px 42px;
+
+  }
+  .slick-dots
+  {
+   margin: -96px 50%;
+   text-align: center;
+   li 
+   {
+	button:before
+	{
+	 font-size: 8px;
+	 width: 40px;
+	 height:40px;
+	 opacity:.80;
+	 color: #FFF;
+	}
+   }
+  }
+ }
+}
+
+/*End our-products Section*/
+/*Start Featured Items*/
+.featured-items
+{
+ margin-top: 19px;
+ margin-bottom: 60px;
+ .multiple-items
+ {
+  h3 
+  {
+   cursor: pointer;
+   margin-left: 20px;
+   font-size: 23px;
+   font-family: $myriad-bold-font;
+   &:active,
+   &:hover{color: #F00}
+  }
+  .slick-next{right: 0;}
+  .slick-prev:before,
+  .slick-next:before
+  {
+   border: 2px solid #fd2014;
+   color: #FFF;
+   height: 30px;
+   width: 40px;
+   background-color: #fd2014;
+  }
+}
+}
+/*End Featured Items*/
+/*Start product-catalog Section*/
+.product-catalog
+{
+ margin-top: 50px;
+ margin-bottom: 50px;
+ text-align: center;
+ h2 
+ {
+  font-size: 40px;
+  font-family: $roboto-bold-font;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: left;
+ }
+ .product
+ {
+  img 
+  {
+   margin-bottom: 35px;
+  }
+  h4 
+  {
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+   font-size: 17px;
+   color: #919194
+  }
+ }
+}
+/*End product-catalog Section*/
+/*Start Steps Section*/
+.steps
+{
+  margin-top: 40px;
+  padding: 30px 0;
+  text-align: center;
+ .step 
+ {
+   margin-bottom: 40px;
+  img 
+  {
+   margin-bottom: 40px;
+  }
+  p 
+  {
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 1.6;
+   color: #77777a;
+  }
+ }
+}
+/*End Steps Section*/
+/*Start About-Us Section*/
+.about-us
+{
+ .info-box
+ {
+  border: 6px solid #FFF;
+  border-left: 2px solid #FFF;
+  padding: 30px 20px;
+  margin-bottom: 25px;
+  p 
+  {
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 1.6;
+   color: #77777a;
+  }
+ }
+ .news-box
+ {
+   h3 
+   {
+    font-family: $roboto-bold-font;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom:40px
+   }
+   span 
+   {
+    color: #d6d6d7;
+    font-family: $myriad-normal-font;
+    font-weight: normal
+   }
+   p 
+   {
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 1.6;
+   color: #77777a
+   }
+ }
+}
+/*End About-Us Section*/
+/***End Home Page***/
+/***Start Catalog Page***/
+.product-catalog
+{
+  .product
+  {
+    margin-bottom: 55px;
+  }
+}
+/***End Catalog Page***/
+/***Start Category Page***/
+/*Start Category Section*/
+.category
+{
+  overflow: hidden;
+  h3 
+  {
+   font-family: $roboto-bold-font;
+   font-weight: bold;
+   font-size: 42px;
+   margin-bottom: 30px
+  }
+  /* The container */
+.form-checkbox
+ {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  input 
+  {
+	position: absolute;
+	opacity: 1;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  /* Create a custom checkbox */
+  .check-mark 
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #da251c;
+  margin-top: 8px;
+  /* Create the checkmark/indicator (hidden when not checked) */
+    &:after 
+    {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    &:after 
+    {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #da251c;;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    }
+    &:hover input ~ .check-mark {
+    background-color: #2196F3;
+    }
+    &:hover input[type="radio"]:checked ~ .check-mark:after
+     {
+      display: block;
+     }
+     input[type="radio"]:checked ~ .check-mark:after
+     {
+      display: block;
+     }
+     &:hover input[type="checkbox"]:checked ~ .check-mark:after
+     {
+      display: block;
+     }
+     input[type="checkbox"]:checked ~ .check-mark:after
+     {
+      display: block;
+     }
+    &:hover input ~ .check-mark {
+    background-color: #ccc;
+  } 
+  .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #FFF;
+  border-radius: 50%;
+  border: 2px solid #da251b;
+  &:after {
+ 	top: -6px;
+	left: 2px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #da251b;
+  margin-top: 8px;
+  }
+ }
+ }
+ /*Start Product-box Section*/
+ .product-box
+ {
+  background-color: #FFF;
+  margin-bottom: 15px;
+  padding: 15px 6px;
+  .product-describtion
+  {
+  h4 
+  {
+   font-family: $roboto-bold-font;
+   font-weight: bold;
+   margin-bottom: 25px
+  }
+  p 
+  {
+   font-family: $myriad-normal-font;
+   
+  }
+  span 
+  {
+   display: block;
+   
+  }
+ }
+ .product-price
+ {
+   margin-top: 25px;
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+   h4 
+   {
+    font-size: 19px;
+    margin-bottom: 15px;
+    span 
+    {
+      color: #c3c0c0;
+      margin-right: 1px;
+      font-size: 16px;
+    }
+   }
+   h6 
+   {
+     font-size: 17px;
+     margin-bottom:25px;
+     span 
+    {
+      color: #c3c0c0;
+      margin-right: 1px;
+      font-size: 15px;
+    }
+   }
+   button 
+   {
+    font-size: 17px;
+    background: #da251c;
+    color: #fae9e9;
+    border: 2px solid #da251c;
+    padding: 8px 30px;
+    border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+   }
+   .in-stock
+   {
+    span 
+    {
+      display: inline-block;
+      border: 2px solid #eaeaeb;
+      width: 40px;
+      height: 40px;
+      line-height: 35px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .none-border
+    {
+     border: none;
+     margin-left: 10px;
+     margin-right: 10px
+    }
+    
+   }
+ }
+}
+}
+/*End Category Section*/
+/*Start Pagination Section*/
+.paginate
+{
+  background-color: $bg-color;
+  .page-item.active 
+  {
+   .page-link {
+    color: #FFF;
+    background-color: #da251c;
+    border-color: #da251c;
+  } 
+  }
+
+}
+/*End Pagination Section*/ 
+/*** End Category Page ***/ 
+/*** Start order Page ***/ 
+.category
+{
+ .product-box
+  {
+   @media(max-width:767px)
+   {
+    margin: auto;
+    text-align: center
+   }
+  }
+ .order-box
+ { 
+   background-color: #FFF;
+   padding: 18px 15px;
+   height: auto;
+   margin-bottom: 30px;
+   h4 
+   {
+    font-family: $roboto-bold-font;
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 18px;
+   }
+   h6 
+   { 
+     font-family: $myriad-normal-font;
+     font-weight: normal;
+     margin-bottom: 19px;
+     span 
+     {
+      margin-left: 65px;
+     }
+   }
+   h5
+   { 
+     font-family: $myriad-normal-font;
+     font-weight: normal;
+     span 
+     {
+      display: block;
+      font-family: $roboto-bold-font;
+      font-weight: bold;
+      margin-top: 15px;
+     }
+   }
+ }
+ .checkout
+ {
+   background-color: #FFF;
+   height:auto;
+   padding: 19px 15px;
+   @media(max-width:767px)
+   {
+     margin-bottom: 30px
+   }
+   h4 
+   {
+    font-family: $roboto-bold-font;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+   }
+   input[type="text"]
+   {
+    height: 40px;
+    margin-bottom: 10px;
+    border: 2px solid #e5e5e5; 
+    width: 85%;
+    margin-left: 15px;
+    padding-left: 10px;
+   }
+   input[type="submit"]
+   {
+    display:block;
+    background-color: #da251b;
+    color: #FFF;
+    padding: 7px 17px;
+    border: 2px solid #da251b;
+    margin: 6px auto;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+ }
+}
+/*** End order Page ***/ 
+/*** Start Product Page ***/
+.product-details
+{
+ height: auto;
+ padding: 30px 0 100px;
+ h2
+ {
+  font-family: $roboto-bold-font;
+  font-weight: bold;
+  margin-bottom: 40px;
+ }
+ .bzoom_wrap
+ {
+   li.bzoom_smallthumb_active 
+   {
+    border: 3px solid #da251a;
+   }
+ }
+ .details
+ {
+  font-family: $myriad-normal-font;
+  font-weight: normal;
+  @media(max-width:767px)
+  {
+   margin-top:440px
+  }
+  p 
+  {
+   font-size: 26px;
+   margin-bottom: 6px;
+  }
+  h6 
+  {
+   font-weight: normal;
+   color: #8d8e94;
+   span
+   {
+    color: #313336;
+    margin-left: 6px;
+    font-weight: bold
+   }
+  }
+  input[type="text"]
+  {
+    margin-left: -18px;
+    border: none;
+    padding-left: 15px;
+  }
+   button[type="submit"]
+  {
+    height: 36px;
+    background-color: #da251b;
+    color: #FFF;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+  }
+ }
+}
+/*End Product-details*/
+/*Start Product-feats*/ 
+.product-feats
+{
+ margin-top: 80px; 
+ table 
+ {
+   background-color: #FFF;
+   padding: 10px 20px;
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+   @media(max-width:767px)
+   {
+    margin-top: -148px
+   }
+   td 
+   {
+    border: 2px solid #f1f1f1;
+    width: 40%;
+    padding: 10px 15px;
+
+   }
+ }
+ p
+ {
+   font-family: $myriad-normal-font;
+   font-size: 17px;
+   line-height: 1.8;
+ }
+}
+/*End Product-feats*/
+/*** End Product Page ***/
+/*** Start News Page ***/
+.page-content
+{
+  h2 
+  {
+   font-family: $roboto-bold-font;
+   font-weight: bold;
+   margin-bottom: 40px;
+  }
+  h4 
+  {
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+   color: #8d8e94
+  }
+  p 
+  {
+   line-height: 1.7;
+   color: #919194;
+   font-family: $myriad-normal-font;
+   font-weight: normal;
+  }
+  h3 
+  {
+   margin-bottom: 36px;
+   font-family: $roboto-bold-font;
+   font-weight: bold;
+
+  }
+  ul,ol 
+  {
+   font-family: $roboto-normal-font;
+   font-weight: normal
+  }
+}
+/*** End News Page ***/
+/*** Start Contact Page ***/
+.contact
+{
+  h2 
+  {
+   font-family: $roboto-bold-font;
+   font-weight: bold;
+   margin-bottom: 40px;
+
+  }
+ .block
+ {
+   background-color: #FFF;
+   padding: 20px 15px;
+   height: 250px;
+   margin-bottom: 40px;
+   @media(min-width:767px) and (max-width:991px)
+   {
+    height: auto;
+   }
+   h3 
+   {
+    font-family: $roboto-bold-font;
+    font-weight: bold;
+    margin-bottom: 20px;
+   }
+   p 
+   {
+    font-family: $myriad-normal-font;
+    font-weight: normal;
+    color: #919194;
+   }
+   h6 
+   {
+    font-family: $myriad-normal-font;
+    font-weight: normal;
+    color: #919194;
+   }
+   span 
+   {
+    font-family: $myriad-normal-font;
+    font-weight: normal;
+    color: #919194;
+   }
+ } 
+}
+.map 
+ {
+  img 
+  {
+    width: 96%
+  }
+ }
